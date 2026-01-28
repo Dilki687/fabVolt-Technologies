@@ -20,7 +20,7 @@ const contactInfo = [
     title: "WhatsApp",
     value: "+1 (234) 567-890",
     description: "Our preferred communication channel",
-    href: "https://wa.me/94710475008",
+    href: "https://wa.me/94784292775",
   },
   {
     icon: Mail,
@@ -34,7 +34,7 @@ const contactInfo = [
     title: "Phone",
     value: "+1 (234) 567-890",
     description: "Mon-Fri, 9am-6pm",
-    href: "tel:+94710475008",
+    href: "tel:+94784292775",
   },
   {
     icon: MapPin,
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   We typically respond within a few hours during business hours.
                 </p>
                 <a
-                  href="https://wa.me/94710475008"
+                  href="https://wa.me/94784292775"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-4 inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-[#25D366] text-white font-semibold hover:bg-[#128C7E] transition-colors"

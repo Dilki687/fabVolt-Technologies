@@ -10,7 +10,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { MessageCircle, User, Mail, Phone, FileText, Briefcase } from "lucide-react"
 
-const WHATSAPP_NUMBER = "94710475008" // Replace with actual WhatsApp number
+const WHATSAPP_NUMBER = "94784292775" // Replace with actual WhatsApp number
 
 interface ServiceRequestFormProps {
   serviceType: string

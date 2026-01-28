@@ -50,7 +50,7 @@ export function Footer() {
                 info@fabvolt.com
               </a>
               <a
-                href="tel:+94710475008"
+                href="tel:+94784292775"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-[#f0c21f] transition-colors"
               >
                 <Phone className="h-4 w-4 text-[#f0c21f]" />

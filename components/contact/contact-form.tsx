@@ -9,7 +9,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { MessageCircle, User, Mail, Phone, FileText } from "lucide-react"
 
-const WHATSAPP_NUMBER = "94710475008" // Replace with actual WhatsApp number
+const WHATSAPP_NUMBER = "94784292775" // Replace with actual WhatsApp number
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
