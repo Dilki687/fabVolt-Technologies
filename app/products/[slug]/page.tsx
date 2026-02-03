@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation"
 import Link from "next/link"
-import { ArrowLeft, Check } from "lucide-react"
+import { ArrowLeft, Check, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { products, getProductBySlug } from "@/lib/data/products"
 import { ProductImageGallery } from "@/components/products/product-image-gallery"
 import { RelatedProducts } from "@/components/products/related-products"
+import { VideoPlayer } from "@/components/products/video-player"
 
 interface ProductPageProps {
   params: Promise<{ slug: string }>
@@ -93,20 +94,48 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
 
               {/* Buy Button */}
-              <div className="mt-8">
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button
                   asChild
                   size="lg"
-                  className="w-full sm:w-auto bg-[#f0c21f] text-[#0a1724] hover:bg-[#f0c21f]/90 font-semibold text-base px-12"
+                  className="bg-[#f0c21f] text-[#0a1724] hover:bg-[#f0c21f]/90 font-semibold text-base px-12"
                   disabled={!product.inStock}
                 >
                   <Link href={`/order?product=${encodeURIComponent(product.name)}&price=${product.price}`}>
                     Buy This Item
                   </Link>
                 </Button>
-                <p className="mt-3 text-sm text-[#5a6a7a]">
-                  Clicking will take you to the order request form.
-                </p>
+                
+                {/* Download Manual Button */}
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-[#f0c21f] text-[#0a1724] hover:bg-[#f0c21f]/10 font-semibold text-base bg-transparent"
+                >
+                  <a 
+                    href={`/documents/${product.slug}-manual.pdf`}
+                    download
+                    className="inline-flex items-center gap-2"
+                  >
+                    <Download className="w-5 h-5" />
+                    Download Manual
+                  </a>
+                </Button>
+              </div>
+              <p className="mt-3 text-sm text-[#5a6a7a]">
+                Clicking "Buy" will take you to the order request form. Download the manual for detailed specifications.
+              </p>
+
+              {/* Video Demo */}
+              <div className="mt-10">
+                <h2 className="text-lg font-semibold text-[#0a1724] mb-4">
+                  Product Demo Video
+                </h2>
+                <VideoPlayer 
+                  videoId="dQw4w9WgXcQ" 
+                  title={`${product.name} - Product Demo`}
+                />
               </div>
 
               {/* Specifications */}

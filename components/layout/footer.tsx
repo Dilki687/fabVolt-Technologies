@@ -33,9 +33,9 @@ export function Footer() {
               <Image
                 src="/images/whatsapp-20image-202025-10-18-20at-2020.jpg"
                 alt="FabVolt Technologies"
-                width={140}
-                height={44}
-                className="h-10 w-auto"
+                width={180}
+                height={56}
+                className="h-14 w-auto"
               />
             </Link>
             <p className="mt-4 text-sm text-white/70 leading-relaxed">
@@ -50,11 +50,11 @@ export function Footer() {
                 info@fabvolt.com
               </a>
               <a
-                href="tel:+94784292775"
+                href="tel:+94710475008"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-[#f0c21f] transition-colors"
               >
                 <Phone className="h-4 w-4 text-[#f0c21f]" />
-                +1 (234) 567-890
+                +94 71 047 5008
               </a>
               <div className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin className="h-4 w-4 text-[#f0c21f] mt-0.5" />

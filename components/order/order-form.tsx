@@ -11,7 +11,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
 import { MessageCircle, Package, User, Mail, Phone, MapPin, FileText } from "lucide-react"
 
-const WHATSAPP_NUMBER = "94784292775" // Replace with actual WhatsApp number
+const WHATSAPP_NUMBER = "94710475008" // FabVolt WhatsApp number
 
 export function OrderForm() {
   const searchParams = useSearchParams()

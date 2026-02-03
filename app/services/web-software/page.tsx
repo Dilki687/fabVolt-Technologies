@@ -11,6 +11,7 @@ import {
   MessageCircle
 } from "lucide-react"
 import { ServiceRequestForm } from "@/components/services/service-request-form"
+import { TechStackSection } from "@/components/services/tech-stack-section"
 
 export const metadata = {
   title: "Web & Software Development | FabVolt Technologies",
@@ -153,33 +154,7 @@ export default function WebSoftwarePage() {
         </div>
       </section>
 
-      {/* Technologies */}
-      <section className="py-16 lg:py-24 bg-[#f4f6f8]">
-        <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <span className="text-sm font-semibold text-[#f0c21f] uppercase tracking-wider">
-              Tech Stack
-            </span>
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-[#0a1724] sm:text-4xl font-[family-name:var(--font-heading)]">
-              Technologies We Use
-            </h2>
-            <p className="mt-4 text-lg text-[#5a6a7a]">
-              We work with modern, industry-standard technologies to build reliable solutions.
-            </p>
-          </div>
-
-          <div className="mt-12 flex flex-wrap justify-center gap-3">
-            {technologies.map((tech) => (
-              <div
-                key={tech.name}
-                className="px-4 py-2 rounded-full bg-white border border-[#e2e8f0] hover:border-[#f0c21f] transition-colors"
-              >
-                <span className="text-sm font-medium text-[#0a1724]">{tech.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TechStackSection />
 
       {/* Request Form */}
       <section id="request-form" className="py-16 lg:py-24 bg-white">
@@ -215,7 +190,7 @@ export default function WebSoftwarePage() {
             size="lg"
             className="mt-8 bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold"
           >
-            <a href="https://wa.me/94784292775" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/94710475008" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5 mr-2" />
               Chat on WhatsApp
             </a>

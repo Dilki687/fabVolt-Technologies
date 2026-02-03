@@ -3,6 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 import { Menu, X, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -31,6 +32,13 @@ const navigation = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (href: string) => {
+    if (href === "/" && pathname === "/") return true
+    if (href !== "/" && pathname.startsWith(href)) return true
+    return false
+  }
 
   return (
     <header className="sticky top-0 z-50 bg-[#0a1724] border-b border-[#1a2a3a]">
@@ -40,9 +48,9 @@ export function Header() {
             <Image
               src="/images/whatsapp-20image-202025-10-18-20at-2020.jpg"
               alt="FabVolt Technologies"
-              width={160}
-              height={50}
-              className="h-10 w-auto"
+              width={200}
+              height={60}
+              className="h-14 w-auto"
               priority
             />
           </Link>
@@ -69,7 +77,9 @@ export function Header() {
           {navigation.map((item) =>
             item.children ? (
               <DropdownMenu key={item.name}>
-                <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-white/80 hover:text-[#f0c21f] transition-colors">
+                <DropdownMenuTrigger className={`flex items-center gap-1 text-sm font-medium transition-colors ${
+                  isActive(item.href) ? "text-[#f0c21f]" : "text-white/80 hover:text-[#f0c21f]"
+                }`}>
                   {item.name}
                   <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
@@ -78,7 +88,11 @@ export function Header() {
                     <DropdownMenuItem key={child.name} asChild>
                       <Link
                         href={child.href}
-                        className="text-white/80 hover:text-[#f0c21f] hover:bg-[#1a2a3a] cursor-pointer"
+                        className={`cursor-pointer transition-colors ${
+                          isActive(child.href)
+                            ? "text-[#f0c21f] bg-[#1a2a3a]"
+                            : "text-white/80 hover:text-[#f0c21f] hover:bg-[#1a2a3a]"
+                        }`}
                       >
                         {child.name}
                       </Link>
@@ -90,7 +104,9 @@ export function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-white/80 hover:text-[#f0c21f] transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  isActive(item.href) ? "text-[#f0c21f]" : "text-white/80 hover:text-[#f0c21f]"
+                }`}
               >
                 {item.name}
               </Link>
@@ -133,7 +149,9 @@ export function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block py-2 text-sm font-medium text-white/80 hover:text-[#f0c21f]"
+                  className={`block py-2 text-sm font-medium transition-colors ${
+                    isActive(item.href) ? "text-[#f0c21f]" : "text-white/80 hover:text-[#f0c21f]"
+                  }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}

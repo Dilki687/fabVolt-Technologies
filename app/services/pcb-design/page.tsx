@@ -241,7 +241,7 @@ export default function PCBServicesPage() {
             size="lg"
             className="mt-8 bg-[#25D366] hover:bg-[#128C7E] text-white font-semibold"
           >
-            <a href="https://wa.me/94784292775" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
               <MessageCircle className="w-5 h-5 mr-2" />
               Chat on WhatsApp
             </a>
