@@ -19,11 +19,11 @@ const projects = [
   },
   {
     id: 2,
-    title: "E-Commerce Platform",
+    title: "Eazy-Eats - Online Food Ordering System",
     category: "Web Development",
-    description: "Full-featured e-commerce platform with inventory management, payment processing, and analytics dashboard.",
-    image: "/placeholder.svg?height=400&width=600&text=E-Commerce+Platform",
-    tags: ["Next.js", "React", "PostgreSQL", "Stripe"],
+    description: "Full-featured food ordering platform with secure payments, real-time order management, and an admin dashboard for restaurant operations.",
+    image: "/Eazy-Eats.png?height=400&width=600",
+    tags: ["Spring Boot", "React", "MySQL", "Stripe"],
   },
   {
     id: 3,
@@ -35,11 +35,11 @@ const projects = [
   },
   {
     id: 4,
-    title: "Fleet Management App",
+    title: "BrainBoost - Cognitive Training Mobile Application",
     category: "Mobile Development",
-    description: "Cross-platform mobile application for real-time fleet tracking, driver management, and route optimization.",
-    image: "/placeholder.svg?height=400&width=600&text=Fleet+Management",
-    tags: ["React Native", "GPS", "Real-time", "API"],
+    description: "Mobile application featuring cognitive games and assessments to help users improve and evaluate memory skills.",
+    image: "/brainboost.png?height=400&width=600",
+    tags: ["React Native", "JavaScript", "UI/UX Design", "Mobile Accessibility"],
   },
   {
     id: 5,
@@ -51,11 +51,19 @@ const projects = [
   },
   {
     id: 6,
-    title: "Restaurant Management System",
+    title: "CampZip - Online Camp Location Booking System",
     category: "Web Development",
-    description: "Comprehensive restaurant management solution with POS, inventory tracking, and customer loyalty features.",
-    image: "/placeholder.svg?height=400&width=600&text=Restaurant+System",
-    tags: ["React", "Node.js", "MongoDB", "PWA"],
+    description: "MERN-stack platform for booking camp locations with advanced search, filtering, and secure payment integration.",
+    image: "/campzip.png?height=400&width=600",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+  },
+  {
+    id: 7,
+    title: "Shion Green - Online Spices Selling Website",
+    category: "Web Development",
+    description: "MERN-based e-commerce platform for selling Sri Lankan spices in Japan with multilingual support and global deployment.",
+    image: "/shiongreen.png?height=400&width=600",
+    tags: ["React", "Node.js", "MongoDB"],
   },
 ]
 
@@ -65,6 +73,7 @@ const categories = [
   "Web Development",
   "Mobile Development",
   "IoT Solutions",
+  "3D Printing",
 ]
 
 export default function ProjectsPage() {
