@@ -1,82 +1,93 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { 
-  Users, 
-  Target, 
-  Award, 
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Users,
+  Target,
+  Award,
   Lightbulb,
   ArrowRight,
   Check,
-  ChevronDown
-} from "lucide-react"
+  ChevronDown,
+} from "lucide-react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 
 export const metadata = {
   title: "About Us | FabVolt Technologies",
-  description: "Learn about FabVolt Technologies - your trusted partner for PCB design, web development, and IoT solutions.",
-}
+  description:
+    "Learn about FabVolt Technologies - your trusted partner for PCB design, web development, and IoT solutions.",
+};
 
 const values = [
   {
     icon: Target,
     title: "Quality First",
-    description: "We never compromise on quality. Every project undergoes rigorous testing and review.",
+    description:
+      "We never compromise on quality. Every project undergoes rigorous testing and review.",
   },
   {
     icon: Users,
     title: "Customer Focus",
-    description: "Your success is our priority. We work closely with you to understand and meet your needs.",
+    description:
+      "Your success is our priority. We work closely with you to understand and meet your needs.",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
-    description: "We stay at the forefront of technology to deliver cutting-edge solutions.",
+    description:
+      "We stay at the forefront of technology to deliver cutting-edge solutions.",
   },
   {
     icon: Award,
     title: "Excellence",
-    description: "We strive for excellence in everything we do, from design to delivery.",
+    description:
+      "We strive for excellence in everything we do, from design to delivery.",
   },
-]
+];
 
 const stats = [
   { value: "500+", label: "Projects Completed" },
   { value: "150+", label: "Happy Clients" },
-  { value: "10+", label: "Years Experience" },
-  { value: "50+", label: "Team Members" },
-]
+  { value: "5+", label: "Years Experience" },
+  { value: "10+", label: "Team Members" },
+];
 
 const faqs = [
   {
     question: "How do I place an order for PCB products?",
-    answer: "Browse our product catalog, select the product you want, click 'Buy This Item', fill out the order form, and submit. You'll be redirected to WhatsApp to complete your order directly with our team.",
+    answer:
+      "Browse our product catalog, select the product you want, click 'Buy This Item', fill out the order form, and submit. You'll be redirected to WhatsApp to complete your order directly with our team.",
   },
   {
     question: "Do you offer custom PCB design services?",
-    answer: "Yes! We offer complete custom PCB design services from schematic design to production-ready files. Contact us via our PCB Design Services page to discuss your requirements.",
+    answer:
+      "Yes! We offer complete custom PCB design services from schematic design to production-ready files. Contact us via our PCB Design Services page to discuss your requirements.",
   },
   {
     question: "What is the typical turnaround time for a project?",
-    answer: "Turnaround time varies depending on project complexity. Simple projects can be completed in 1-2 weeks, while complex projects may take 1-3 months. We'll provide an accurate estimate after reviewing your requirements.",
+    answer:
+      "Turnaround time varies depending on project complexity. Simple projects can be completed in 1-2 weeks, while complex projects may take 1-3 months. We'll provide an accurate estimate after reviewing your requirements.",
   },
   {
     question: "Do you provide support after project delivery?",
-    answer: "Yes, we provide post-delivery support for all our services. This includes bug fixes, minor modifications, and technical assistance to ensure your project runs smoothly.",
+    answer:
+      "Yes, we provide post-delivery support for all our services. This includes bug fixes, minor modifications, and technical assistance to ensure your project runs smoothly.",
   },
   {
     question: "What payment methods do you accept?",
-    answer: "All pricing, payment, and shipping details are handled directly via WhatsApp. We can accommodate various payment methods based on your location and preferences.",
+    answer:
+      "All pricing, payment, and shipping details are handled directly via WhatsApp. We can accommodate various payment methods based on your location and preferences.",
   },
   {
     question: "Can you work with international clients?",
-    answer: "We work with clients worldwide. Our WhatsApp-based communication system makes it easy to collaborate across time zones and deliver products globally.",
+    answer:
+      "We work with clients worldwide. Our WhatsApp-based communication system makes it easy to collaborate across time zones and deliver products globally.",
   },
-]
+];
 
 export default function AboutPage() {
   return (
@@ -92,9 +103,10 @@ export default function AboutPage() {
               Engineering Innovation, Delivering Excellence
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed">
-              FabVolt Technologies is a leading technology company specializing in PCB design, 
-              web development, and IoT solutions. We combine technical expertise with a 
-              customer-first approach to deliver solutions that exceed expectations.
+              FabVolt Technologies is a leading technology company specializing
+              in PCB design, web development, and IoT solutions. We combine
+              technical expertise with a customer-first approach to deliver
+              solutions that exceed expectations.
             </p>
           </div>
         </div>
@@ -106,8 +118,12 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-4xl font-bold text-[#0a1724]">{stat.value}</div>
-                <div className="mt-1 text-sm font-medium text-[#0a1724]/70">{stat.label}</div>
+                <div className="text-4xl font-bold text-[#0a1724]">
+                  {stat.value}
+                </div>
+                <div className="mt-1 text-sm font-medium text-[#0a1724]/70">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -126,15 +142,17 @@ export default function AboutPage() {
                 Building the Future of Technology
               </h2>
               <p className="mt-6 text-[#5a6a7a] leading-relaxed">
-                Founded with a vision to bridge the gap between ideas and implementation, 
-                FabVolt Technologies has grown into a trusted technology partner for businesses 
-                worldwide. Our journey began with PCB design services and has expanded to 
-                encompass web development, mobile apps, and IoT solutions.
+                Founded with a vision to bridge the gap between ideas and
+                implementation, FabVolt Technologies has grown into a trusted
+                technology partner for businesses worldwide. Our journey began
+                with PCB design services and has expanded to encompass web
+                development, mobile apps, and IoT solutions.
               </p>
               <p className="mt-4 text-[#5a6a7a] leading-relaxed">
-                Today, we are proud to have helped hundreds of clients bring their projects 
-                to life. From startups to established enterprises, we work with organizations 
-                of all sizes to deliver technology solutions that drive growth and innovation.
+                Today, we are proud to have helped hundreds of clients bring
+                their projects to life. From startups to established
+                enterprises, we work with organizations of all sizes to deliver
+                technology solutions that drive growth and innovation.
               </p>
               <div className="mt-8">
                 <Button
@@ -150,8 +168,12 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <div className="aspect-square rounded-2xl bg-[#f4f6f8] flex items-center justify-center">
-                <div className="w-3/4 h-3/4 rounded-xl bg-[#0a1724] flex items-center justify-center">
-                  <span className="text-6xl font-bold text-[#f0c21f] font-[family-name:var(--font-heading)]">FV</span>
+                <div className="w-3/4 h-3/4 rounded-xl bg-[#0a1724] flex items-center justify-center p-4">
+                  <img
+                    src="/images/whatsapp-20image-202025-10-18-20at-2020.jpg"
+                    alt="FabVolt Technologies Logo"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
               </div>
             </div>
@@ -170,7 +192,8 @@ export default function AboutPage() {
               What Drives Us
             </h2>
             <p className="mt-4 text-lg text-[#5a6a7a]">
-              Our core values guide everything we do, from how we work to how we serve our clients.
+              Our core values guide everything we do, from how we work to how we
+              serve our clients.
             </p>
           </div>
 
@@ -206,7 +229,11 @@ export default function AboutPage() {
 
           <Accordion type="single" collapsible className="w-full">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-[#e2e8f0]">
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border-b border-[#e2e8f0]"
+              >
                 <AccordionTrigger className="text-left text-[#0a1724] hover:text-[#f0c21f] font-medium py-4">
                   {faq.question}
                 </AccordionTrigger>
@@ -226,7 +253,8 @@ export default function AboutPage() {
             Ready to Start Your Project?
           </h2>
           <p className="mt-4 text-white/70">
-            Get in touch with our team to discuss your requirements and get a free quote.
+            Get in touch with our team to discuss your requirements and get a
+            free quote.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
@@ -251,5 +279,5 @@ export default function AboutPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

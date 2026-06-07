@@ -18,12 +18,14 @@ export default function ProductsPage() {
               Product Catalog
             </span>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl font-[family-name:var(--font-heading)]">
-              PCB Products & Modules
+              {/* PCB Products & Modules */}
+              PCB Solutions & 3D Printed Products
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed">
-              Explore our range of ready-made PCB solutions designed for various
-              applications. All products are tested and ready for immediate
-              deployment in your projects.
+              Discover our range of PCB products, electronic modules, and 3D
+              printed solutions designed to support innovation and product
+              development. Every product is crafted with precision, tested for
+              quality, and ready to meet your project requirements.
             </p>
           </div>
         </div>

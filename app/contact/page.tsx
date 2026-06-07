@@ -1,18 +1,13 @@
-import Link from "next/link"
-import { Card, CardContent } from "@/components/ui/card"
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  MessageCircle,
-  Clock
-} from "lucide-react"
-import { ContactForm } from "@/components/contact/contact-form"
+import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Phone, MapPin, MessageCircle, Clock } from "lucide-react";
+import { ContactForm } from "@/components/contact/contact-form";
 
 export const metadata = {
   title: "Contact Us | FabVolt Technologies",
-  description: "Get in touch with FabVolt Technologies for PCB design, web development, and IoT solutions. We respond quickly via WhatsApp.",
-}
+  description:
+    "Get in touch with FabVolt Technologies for PCB design, web development, and IoT solutions. We respond quickly via WhatsApp.",
+};
 
 const contactInfo = [
   {
@@ -25,9 +20,9 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    value: "info@fabvolt.com",
+    value: "info@fabvolt-technologies.com",
     description: "For detailed inquiries",
-    href: "mailto:info@fabvolt.com",
+    href: "mailto:info@fabvolt-technologies.com",
   },
   {
     icon: Phone,
@@ -39,19 +34,20 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Address",
-    value: "Tech Hub, Innovation Street",
-    description: "Visit our office",
+    value: "Sri Lanka",
+    description: "Sri Lanka",
     href: "#",
   },
-]
+];
 
 const services = [
   { name: "PCB Design", href: "/services/pcb-design" },
   { name: "Web Development", href: "/services/web-software" },
   { name: "Mobile Apps", href: "/services/web-software" },
   { name: "IoT Solutions", href: "/services/iot" },
+  { name: "3D Designs", href: "/services/3d-design" },
   { name: "PCB Products", href: "/products" },
-]
+];
 
 export default function ContactPage() {
   return (
@@ -67,8 +63,9 @@ export default function ContactPage() {
               Let&apos;s Build Something Great Together
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed">
-              Have a project in mind or just want to say hello? We&apos;d love to hear from you. 
-              Reach out through WhatsApp for the fastest response or fill out the form below.
+              Have a project in mind or just want to say hello? We&apos;d love
+              to hear from you. Reach out through WhatsApp for the fastest
+              response or fill out the form below.
             </p>
           </div>
         </div>
@@ -83,7 +80,11 @@ export default function ContactPage() {
                 key={info.title}
                 href={info.href}
                 target={info.href.startsWith("http") ? "_blank" : undefined}
-                rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                rel={
+                  info.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
                 className="block"
               >
                 <Card className="h-full bg-white border-0 hover:shadow-lg transition-shadow">
@@ -91,9 +92,15 @@ export default function ContactPage() {
                     <div className="w-10 h-10 rounded-lg bg-[#0a1724] flex items-center justify-center mb-4">
                       <info.icon className="w-5 h-5 text-[#f0c21f]" />
                     </div>
-                    <h3 className="font-semibold text-[#0a1724]">{info.title}</h3>
-                    <p className="mt-1 text-[#0a1724] font-medium">{info.value}</p>
-                    <p className="mt-1 text-sm text-[#5a6a7a]">{info.description}</p>
+                    <h3 className="font-semibold text-[#0a1724]">
+                      {info.title}
+                    </h3>
+                    <p className="mt-1 text-[#0a1724] font-medium">
+                      {info.value}
+                    </p>
+                    <p className="mt-1 text-sm text-[#5a6a7a]">
+                      {info.description}
+                    </p>
                   </CardContent>
                 </Card>
               </a>
@@ -126,8 +133,9 @@ export default function ContactPage() {
                   Quick Response via WhatsApp
                 </h3>
                 <p className="mt-2 text-[#5a6a7a] text-sm">
-                  For the fastest response, reach out to us directly on WhatsApp. 
-                  We typically respond within a few hours during business hours.
+                  For the fastest response, reach out to us directly on
+                  WhatsApp. We typically respond within a few hours during
+                  business hours.
                 </p>
                 <a
                   href="https://wa.me/94710475008"
@@ -168,5 +176,5 @@ export default function ContactPage() {
         </div>
       </section>
     </>
-  )
+  );
 }

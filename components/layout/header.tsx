@@ -22,6 +22,7 @@ const navigation = [
       { name: "PCB Design Services", href: "/services/pcb-design" },
       { name: "Web & Software", href: "/services/web-software" },
       { name: "IoT Solutions", href: "/services/iot" },
+      { name: "3D Design & Printing", href: "/services/3d-design" },
     ],
   },
   { name: "Products", href: "/products" },

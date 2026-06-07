@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, CircuitBoard, Globe, Cpu, Smartphone, Server, Wifi } from "lucide-react"
+import { ArrowRight, CircuitBoard, Globe, Cpu, Smartphone, Server, Wifi, Boxes } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
@@ -32,11 +32,11 @@ const services = [
     features: ["iOS & Android", "React Native", "Flutter"],
   },
   {
-    icon: Server,
-    title: "Custom Software",
-    description: "Tailored software solutions designed to streamline your business operations.",
-    href: "/services/web-software",
-    features: ["Business Apps", "API Development", "Cloud Solutions"],
+    icon: Boxes,
+    title: "3D Design & Printing",
+    description: "Tailored 3D modeling and CAD solutions designed to turn your ideas into precise, manufacturable designs.",
+    href: "/services/3d-design",
+    features: ["Product Design", "Mechanical Parts", "CAD Modeling"],
   },
   {
     icon: Wifi,

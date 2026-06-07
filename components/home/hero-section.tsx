@@ -67,7 +67,7 @@ export function HeroSection() {
                 <div className="text-sm text-white/60">Happy Clients</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-[#f0c21f]">10+</div>
+                <div className="text-3xl font-bold text-[#f0c21f]">5+</div>
                 <div className="text-sm text-white/60">Years Experience</div>
               </div>
             </div>

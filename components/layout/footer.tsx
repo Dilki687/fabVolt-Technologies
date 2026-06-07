@@ -8,6 +8,7 @@ const footerLinks = {
     { name: "Web Development", href: "/services/web-software" },
     { name: "IoT Solutions", href: "/services/iot" },
     { name: "Mobile Apps", href: "/services/web-software" },
+    { name: "3D Design", href: "/services/3d-design" },
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -43,11 +44,11 @@ export function Footer() {
             </p>
             <div className="mt-6 space-y-3">
               <a
-                href="mailto:info@fabvolt.com"
+                href="mailto:info@fabvolt-technologies.com"
                 className="flex items-center gap-2 text-sm text-white/70 hover:text-[#f0c21f] transition-colors"
               >
                 <Mail className="h-4 w-4 text-[#f0c21f]" />
-                info@fabvolt.com
+                info@fabvolt-technologies.com
               </a>
               <a
                 href="tel:+94710475008"
@@ -58,7 +59,7 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-2 text-sm text-white/70">
                 <MapPin className="h-4 w-4 text-[#f0c21f] mt-0.5" />
-                <span>Tech Hub, Innovation Street</span>
+                <span>Sri Lanka</span>
               </div>
             </div>
           </div>
