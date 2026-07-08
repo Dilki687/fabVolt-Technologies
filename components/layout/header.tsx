@@ -23,6 +23,7 @@ const navigation = [
       { name: "Web & Software", href: "/services/web-software" },
       { name: "IoT Solutions", href: "/services/iot" },
       { name: "3D Design & Printing", href: "/services/3d-design" },
+      { name: "CNC and Laser cutting ", href: "/services/cnc-laser" },
     ],
   },
   { name: "Products", href: "/products" },

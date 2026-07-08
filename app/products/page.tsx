@@ -19,13 +19,14 @@ export default function ProductsPage() {
             </span>
             <h1 className="mt-3 text-4xl font-bold tracking-tight text-white sm:text-5xl font-[family-name:var(--font-heading)]">
               {/* PCB Products & Modules */}
-              PCB Solutions & 3D Printed Products
+              Engineering Products & Manufacturing Solutions
             </h1>
             <p className="mt-6 text-lg text-white/70 leading-relaxed">
-              Discover our range of PCB products, electronic modules, and 3D
-              printed solutions designed to support innovation and product
-              development. Every product is crafted with precision, tested for
-              quality, and ready to meet your project requirements.
+              Discover our collection of PCB products, 3D printed solutions, and
+              CNC & laser-cut components designed to support innovation, product
+              development, and manufacturing. Every product is crafted with
+              precision, tested for quality, and built to meet the highest
+              industry standards.
             </p>
           </div>
         </div>

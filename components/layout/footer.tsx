@@ -9,6 +9,7 @@ const footerLinks = {
     { name: "IoT Solutions", href: "/services/iot" },
     { name: "Mobile Apps", href: "/services/web-software" },
     { name: "3D Design", href: "/services/3d-design" },
+    { name: "CNC & Laser Cutting", href: "/services/cnc-laser" },
   ],
   company: [
     { name: "About Us", href: "/about" },
@@ -18,7 +19,7 @@ const footerLinks = {
   ],
   support: [
     { name: "Request Quote", href: "/contact" },
-    { name: "Order PCB", href: "/products" },
+    { name: "Order Products", href: "/products" },
     { name: "FAQs", href: "/about#faq" },
   ],
 }

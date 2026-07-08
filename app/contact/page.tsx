@@ -46,6 +46,7 @@ const services = [
   { name: "Mobile Apps", href: "/services/web-software" },
   { name: "IoT Solutions", href: "/services/iot" },
   { name: "3D Designs", href: "/services/3d-design" },
+  { name: "CNC & Laser Cutting", href: "/services/cnc-laser" },
   { name: "PCB Products", href: "/products" },
 ];
 

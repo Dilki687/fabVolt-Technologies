@@ -74,6 +74,7 @@ const categories = [
   "Mobile Development",
   "IoT Solutions",
   "3D Printing",
+  "CNC & Laser Cutting",
 ]
 
 export default function ProjectsPage() {

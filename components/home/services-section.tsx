@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, CircuitBoard, Globe, Cpu, Smartphone, Server, Wifi, Boxes } from "lucide-react"
+import { ArrowRight, CircuitBoard, Globe, Cpu, Smartphone, Wifi, Boxes, Cog } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const services = [
@@ -37,6 +37,13 @@ const services = [
     description: "Tailored 3D modeling and CAD solutions designed to turn your ideas into precise, manufacturable designs.",
     href: "/services/3d-design",
     features: ["Product Design", "Mechanical Parts", "CAD Modeling"],
+  },
+  {
+    icon: Cog,
+    title: "CNC & Laser Cutting",
+    description: "Precision CNC and laser cutting services for prototyping and production.",
+    href: "/services/cnc-laser",
+    features: ["CNC Machining", "Laser Cutting", "Material Expertise"],
   },
   {
     icon: Wifi,
